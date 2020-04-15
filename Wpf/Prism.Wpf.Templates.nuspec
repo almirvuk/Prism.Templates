@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Prism.Wpf.Templates</id>
+    <version>1.0.0</version>
+    <authors>Brian Lagunas</authors>
+    <description>Prism Library Templates</description>
+    <language>en-US</language>
+    <projectUrl>https://github.com/PrismLibrary/Prism</projectUrl>
+    <licenseUrl>https://github.com/PrismLibrary/Prism/blob/master/LICENSE</licenseUrl>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+  <files>
+    <file src="BlankCoreApp/**" exclude="**\.vs\**\*;**\bin\**\*;**\obj\**\*;**\*.user;**\*.lock.json;**\.DS_Store" target="content" />
+    <file src="BlankApp/**" exclude="**\.vs\**\*;**\bin\**\*;**\obj\**\*;**\*.user;**\*.lock.json;**\.DS_Store" target="content" />
+    <file src="ModuleCore/**" exclude="**\.vs\**\*;**\bin\**\*;**\obj\**\*;**\*.user;**\*.lock.json;**\.DS_Store" target="content" />
+    <file src="Module.Wpf/**" exclude="**\.vs\**\*;**\bin\**\*;**\obj\**\*;**\*.user;**\*.lock.json;**\.DS_Store" target="content" />
+  </files>
+</package>

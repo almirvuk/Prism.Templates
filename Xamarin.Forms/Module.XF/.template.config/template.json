@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Brian Lagunas",
+  "classifications": [ "Prism", "Xamairn", "Xamarin.Forms" ],
+  "name": "Prism Module (Xamarin)",
+  "identity": "Prism.Xamarin.Forms.Module.CSharp", // Unique name for this template
+  "groupIdentity": "Prism.Xamarin.Forms.Module",
+  "shortName": "xf-module", // Short name that can be used on the cli
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "Module.XF",
+  "preferNameDirectory": true,
+  "guids": [
+    "{B2FB3D6B-1A7B-4DF3-BC68-F03623AA5E79}" // Module
+  ],
+  "symbols": {
+    "ModuleName": {
+      "type": "parameter",
+      "replaces": "ModuleName",
+      "fileRename": "ModuleName"
+    }
+  },
+  "primaryOutputs": [
+    {
+      "path": "Module.XF.csproj"
+    }
+  ]
+}

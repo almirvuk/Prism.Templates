@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             <!--#if AutofacContainer -->
+             xmlns:prism="clr-namespace:Prism.Autofac;assembly=Prism.Autofac.Forms"
+             <!--#elif DryIocContainer -->
+             xmlns:prism="clr-namespace:Prism.DryIoc;assembly=Prism.DryIoc.Forms"
+             <!--#else -->
+             xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
+             <!--#endif -->
+             x:Class="BlankApp.App">
+	<Application.Resources>
+
+		<!-- Application resource dictionary -->
+
+	</Application.Resources>
+</prism:PrismApplication>

@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Brian Lagunas",
+  "classifications": [ "Prism", "WPF" ],
+  "name": "Prism Blank App (WPF)",
+  "identity": "Prism.Wpf.Blank.CSharp", // Unique name for this template
+  "groupIdentity": "Prism.Wpf.Blank",
+  "shortName": "wpf-blank", // Short name that can be used on the cli
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "BlankApp",
+  "preferNameDirectory": true,
+  "guids": [
+    "{99C9E82C-C594-446D-AA59-8FFBC43AD226}" // Wpf
+  ],
+  "symbols": {
+    "TargetFrameworkVersion": {
+      "type": "parameter",
+      "datatype": "text",
+      "defaultValue": "v4.5.2",
+      "replaces": "$wizardtargetframeworkversion$"
+    },
+    "Container": {
+      "type": "parameter",
+      "dataType": "choice",
+      "defaultValue": "DryIoc",
+      "choices": [
+        {
+          "choice": "DryIoc",
+          "description": "Uses DryIoc as the Dependency Injection Container"
+        },
+        {
+          "choice": "Unity",
+          "description": "Uses Unity as the Dependency Injection Container"
+        }
+      ],
+      "description": "The Dependency Injection Container to use"
+    },
+    "DryIocContainer": {
+      "type": "computed",
+      "value": "(Container == \"DryIoc\")"
+    },
+    "UnityContainer": {
+      "type": "computed",
+      "value": "(Container == \"Unity\")"
+    }
+  },
+  "primaryOutputs": [
+    {
+      "path": "BlankApp.csproj"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Brian Lagunas",
+  "classifications": [ "Prism", "Wpf" ],
+  "name": "Prism Module (.NET Core)",
+  "identity": "Prism.Wpf.Module.Core.CSharp", // Unique name for this template
+  "groupIdentity": "Prism.Wpf.Module.Core",
+  "shortName": "wpf-module-core", // Short name that can be used on the cli
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "ModuleCore",
+  "preferNameDirectory": true,
+  "guids": [
+    "{AB8B448C-DD74-4D60-A041-3E5D03A32180}" // Module
+  ],
+  "symbols": {
+    "ModuleName": {
+      "type": "parameter",
+      "replaces": "ModuleName",
+      "fileRename": "ModuleName"
+    }
+  },
+  "primaryOutputs": [
+    {
+      "path": "ModuleCore.csproj"
+    }
+  ]
+}
