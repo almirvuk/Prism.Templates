@@ -102,10 +102,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Condition=" '$(Container)' == 'Autofac' " Include="Prism.Autofac" Version="7.2.0.1367" />
-    <PackageReference Condition=" '$(Container)' == 'DryIoc' " Include="Prism.DryIoc" Version="7.2.0.1367" />
-    <PackageReference Condition=" '$(Container)' == 'Ninject' " Include="Prism.Ninject" Version="7.2.0.1367" />
-    <PackageReference Condition=" '$(Container)' == 'Unity' " Include="Prism.Unity" Version="7.2.0.1367" />
+    <PackageReference Condition=" '$(Container)' == 'DryIoc' " Include="Prism.DryIoc" Version="7.2.0.1422" />
+    <PackageReference Condition=" '$(Container)' == 'Unity' " Include="Prism.Unity" Version="7.2.0.1422" />
   </ItemGroup>
 
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
